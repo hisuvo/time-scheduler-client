@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaApple, FaGithub, FaGoogle } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 
 const SignupForm = () => {
   const [formData, setFormData] = useState({
@@ -25,14 +25,14 @@ const SignupForm = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
-      <div className="bg-white p-6 rounded-2xl shadow-lg max-w-md w-full border-2">
+      <div className="bg-white p-6 rounded-2xl shadow-lg max-w-md w-full">
         <h2 className="text-2xl font-semibold text-center mb-4">
           Create account
         </h2>
 
         <div className="flex justify-center gap-3 mb-4">
           <button className="p-3 bg-gray-200 rounded-lg">
-            <FaApple size={24} />
+            <FaFacebook size={24} />
           </button>
           <button className="p-3 bg-gray-200 rounded-lg">
             <FaGithub size={24} />

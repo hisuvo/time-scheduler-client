@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaApple, FaGithub, FaGoogle } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 
 const SinginForm = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +31,7 @@ const SinginForm = () => {
 
         <div className="flex justify-center gap-3 mb-4">
           <button className="p-3 bg-gray-200 rounded-lg">
-            <FaApple size={24} />
+            <FaFacebook size={24} />
           </button>
           <button className="p-3 bg-gray-200 rounded-lg">
             <FaGithub size={24} />
