@@ -2,62 +2,26 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <header className="p-4 dark:bg-gray-100 dark:text-gray-800">
+    <header className="px-4 py-2 border dark:bg-gray-100 dark:text-gray-800">
       <div className="container flex justify-between h-16 mx-auto">
         <Link
           rel="noopener noreferrer"
-          href="/"
+          to="/"
           aria-label="Back to homepage"
           className="flex items-center p-2 text-2xl font-bold"
         >
           Time Scheduler
         </Link>
 
-        {/* menu */}
-        {/* <ul className="items-stretch hidden space-x-3 lg:flex">
-          <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600"
-            >
-              Link
-            </a>
-          </li>
-          <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-"
-            >
-              Link
-            </a>
-          </li>
-          <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-"
-            >
-              Link
-            </a>
-          </li>
-          <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-"
-            >
-              Link
-            </a>
-          </li>
-        </ul> */}
-
         <div className="items-center flex-shrink-0 hidden lg:flex">
-          <button className="self-center px-8 py-3 rounded">Sign in</button>
-          <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50">
-            Sign up
-          </button>
+          <Link to={"signup"}>
+            <button className="self-center px-8 py-3 rounded">Sign in</button>
+          </Link>
+          <Link to={"signup"}>
+            <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50">
+              Sign up
+            </button>
+          </Link>
         </div>
 
         <button className="p-4 lg:hidden">
