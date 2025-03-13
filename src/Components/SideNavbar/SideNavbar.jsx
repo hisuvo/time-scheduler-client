@@ -17,31 +17,31 @@ const SideNavbar = () => {
       <div className="p-4">
         <nav className="space-y-4">
           <Link
-            to="/boards"
+            to="boards"
             className="block border p-3 text-center rounded-md hover:bg-gray-200"
           >
             Boards
           </Link>
           <Link
-            to="/members"
+            to="members"
             className="block border p-3 text-center rounded-md hover:bg-gray-200"
           >
             Members
           </Link>
           <Link
-            to="/workspace-create"
+            to="workspace"
             className="block border p-3 text-center rounded-md hover:bg-gray-200"
           >
             WorkSpace Create
           </Link>
           <Link
-            to="/dashboard"
+            to="dashboard"
             className="block border p-3 text-center rounded-md hover:bg-gray-200"
           >
             Dashboard
           </Link>
           <Link
-            to="/profile"
+            to="profile"
             className="block border p-3 text-center rounded-md hover:bg-gray-200"
           >
             Profile
@@ -51,7 +51,7 @@ const SideNavbar = () => {
           <h3 className="text-center font-semibold mb-2">Your Board list</h3>
           <Link
             to="/board/1"
-            className="block border p-3 text-center bg-blue-300 rounded-md hover:bg-blue-400"
+            className="block border p-3 text-center bg-violet-300 rounded-md hover:bg-violet-400"
           >
             Board name 1
           </Link>
