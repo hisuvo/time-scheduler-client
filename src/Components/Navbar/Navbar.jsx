@@ -4,14 +4,9 @@ const Navbar = () => {
   return (
     <header className="px-4 py-2 border dark:bg-gray-100 dark:text-gray-800">
       <div className="container flex justify-between h-16 mx-auto">
-        <Link
-          rel="noopener noreferrer"
-          to="/"
-          aria-label="Back to homepage"
-          className="flex items-center p-2 text-2xl font-bold"
-        >
-          Time Scheduler
-        </Link>
+        <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50">
+          Add Task
+        </button>
 
         <div className="items-center flex-shrink-0 hidden lg:flex">
           <Link to={"signin"}>
