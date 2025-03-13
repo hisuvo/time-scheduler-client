@@ -13,11 +13,11 @@ const MainLayout = () => {
           <SideNavbar />
         </div>
         {/* Content dashourd */}
-        <div className="col-span-12 md:col-span-10 flex flex-col min-h-screen">
+        <div className="col-span-12 md:col-span-10">
           <header>
             <Navbar />
           </header>
-          <main className="flex-grow">
+          <main className="min-h-svh p-2">
             <Outlet />
           </main>
           <footer>

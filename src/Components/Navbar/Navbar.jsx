@@ -1,21 +1,18 @@
 import { Link } from "react-router";
+import Button from "../Button/Button";
 
 const Navbar = () => {
   return (
-    <header className="px-4 py-2 border dark:bg-gray-100 dark:text-gray-800">
-      <div className="container flex justify-between h-16 mx-auto">
-        <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50">
-          Add Task
-        </button>
+    <header className="px-4 py-1 border dark:bg-gray-100 dark:text-gray-800">
+      <div className="container flex justify-between  mx-auto">
+        <Button title={"Add Task"} />
 
-        <div className="items-center flex-shrink-0 hidden lg:flex">
+        <div className="items-center flex-shrink-0 hidden lg:flex gap-2">
           <Link to={"signin"}>
-            <button className="self-center px-8 py-3 rounded">Sign in</button>
+            <Button title={"Sign In"} />
           </Link>
           <Link to={"signup"}>
-            <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50">
-              Sign up
-            </button>
+            <Button style={"bg-violet-400"} title={"Sign up"} />
           </Link>
         </div>
 
