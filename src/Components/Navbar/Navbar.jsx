@@ -14,7 +14,7 @@ const Navbar = () => {
         </Link>
 
         <div className="items-center flex-shrink-0 hidden lg:flex">
-          <Link to={"signup"}>
+          <Link to={"signin"}>
             <button className="self-center px-8 py-3 rounded">Sign in</button>
           </Link>
           <Link to={"signup"}>
